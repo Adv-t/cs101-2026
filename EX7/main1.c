@@ -53,7 +53,7 @@ int main(void) {
     int ticket_count;
     int tickets[MAX_TICKETS][NUMBERS_PER_TICKET];
 
-    // 取得 UTC 時間並加上 8 小時 (28800 秒)，確保在線上編譯器也顯示台灣時間
+    
     time_t now = time(NULL) + 8 * 3600;
     struct tm *tw_time = gmtime(&now);
     if (tw_time == NULL) {
